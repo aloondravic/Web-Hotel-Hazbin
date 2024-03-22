@@ -1,0 +1,522 @@
+:root{
+    --blanco: #ffffff;
+    --negro: #000000;
+    --primario: #F0E0C7;
+    --secundario: #9B8562;
+    --terciario: #705935;
+    --cuarto: #332207;
+}
+
+.inria-serif-bold-italic {
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 0px; 
+}
+
+/*Globales*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color:var(--blanco);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header{
+    position: relative;
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    background-position: center; 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--negro);
+    padding: 20px;
+    text-align: center;
+}
+
+/*Inputs*/
+
+input[type="date"] {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+input[type="date"]:hover{
+    color: #57010C;
+}
+
+#idReservar {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+#idReservar:hover {
+    background-color: #133b15;
+}
+
+label[for="idNumNiños"] {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+  /* FORMULARIO */
+.div1{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-sizing: border-box;
+    align-items: baseline;
+    color: white;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;   
+    background-color:rgba(0, 0, 0, .5);
+}
+
+
+
+  /* select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  } */
+  
+
+  /* select {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+    padding-right: 30px;
+  } */
+  
+  /* select option:checked {
+    color: #4CAF50;
+  } */
+
+ /*Nav*/
+ nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100%); 
+    text-align: center;
+    background-color: var(--negro);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ff0;
+    text-decoration: underline;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--blanco);
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: var(--blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tipografias */
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    text-align: left;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: left;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+/* Contenedores */
+
+.textoInicio, .textoInicio h2, .textoServicios h2, .textoOfertasPlanes h2,
+.textoRegistro h2, .textoGaleria h2, .textoInicio h3, .textoServicios p, 
+.textoRegistro form{
+    text-align: center;
+}
+
+
+
+.textoCuartos h2, .textoCuartos h3{
+    text-align: left;
+}
+
+
+
+
+.contenedor{
+    width: 100%;
+	max-width: 1920px;
+	margin: auto;
+	padding: 0px;
+}
+
+/* HEADER */
+.contenedorHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    padding-top: 20px; 
+}
+
+.menu a:hover{
+    background-color: white;
+    color: #000000;
+    text-decoration: none;
+}
+
+.imgHeader{
+    width: 12%; 
+    height: 12%; 
+    text-align: center;
+}
+
+.contenedorTamaño{
+    width: 50%;
+}
+
+.contenedorDoble{
+    width: 70%;
+    max-width: 1920px;
+    position: relative;
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 100px;
+    margin: auto;
+    box-shadow: none;
+}
+
+.contenedorTriple{
+	display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contenedorTriple > :nth-child(n+7) {
+    align-self: center;
+    justify-self: center; 
+    width: 50%; 
+}
+
+.contenedorTripleV{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 20px;
+    padding: 100px;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.contenedorTripleV div{
+    background-color: rgba(201, 198, 198, 0.541);
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedorRegistro{
+    display: grid;
+    width: 100%;
+	max-width: 1920px;
+    grid-template-columns: repeat(2, 1fr);
+	margin: auto;
+	padding: 0px;
+    box-shadow: none;
+    gap: 20px;
+}
+
+.card{
+	border-radius: 0%;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.boton{
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition-duration: 0.4s; 
+    display: inline-block;
+}
+
+
+.botonA{
+    background-color: var(--secundario);
+    display: inline-block;
+    margin: 4px 2px; 
+    justify-content: center;
+}
+
+
+.botonA:hover{
+    background-color:var(--cuarto); 
+    color: white;
+}
+
+.botonB{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    padding: 2px 10px; 
+    border: 2px solid #000000;
+    border-radius: 20px; 
+}
+
+.botonC{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
+    padding: 2px 10px;
+    border: 2px solid #000000;
+    border-radius: 20px; 
+}
+
+.botonB:hover,.botonC:hover{
+    background-color:var(--blanco); 
+}
+
+.contenedorRegistro{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-register{
+    width: 500px;
+    background-color: var(--secundario);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    padding-top: 0;
+}
+
+.form-register h4{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    padding-bottom: 0px;
+}
+
+.controls{
+    width: 94%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+ 
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.botons:hover{
+    background: #112d69;
+}
+
+/*MediaQuery (Responsividad)*/
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .contenedor,
+    .contenedorDoble,
+    .contenedorTriple,
+    .contenedorTripleV {
+        padding: 20px;
+    }
+
+    .contenedorRegistro {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-register {
+        width: 100%;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .controls {
+        font-size: 16px;
+    }
+
+    .boton {
+        font-size: 14px;
+    }
+}
+
+@media (max-zoom: 100%) {
+    
+    body {
+        font-size: 16px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contenedor,
+    .contenedorDoble,
+    .contenedorTriple,
+    .contenedorTripleV {
+        padding: 0px;
+    }
+
+    .contenedorRegistro {
+        gap: 20px;
+    }
+
+    .form-register {
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .controls {
+        font-size: 18px;
+    }
+
+    .boton {
+        font-size: 16px;
+    }
+}

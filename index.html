@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazbin Hotel</title>
+
+    <!-- Fuente Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fuente Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Fuente Inria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilos -->
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <link rel="icon" href="./img/logo.svg">
+
+
+</head>
+<body>
+    <header>
+        <nav class="contenedorHeader">
+            <div class="imgHeader">
+                <img src="img/HAZBIN HOTEL.png">
+            </div>
+            <div class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#planesOfertas">Ofertas</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#registro">Registro</a>
+            </div>
+        </nav>
+        <br><br><br><br><br>
+
+
+        <img src="img/logo.svg" style="width: 20%; height: 20%; filter: brightness(0) invert(1);">
+        <br><br><br><br><br>
+            <div>
+                <form class="div1">
+                    <div>
+                        <label> Check-In</label>
+                        <input type="date" name="FechaEntrada" id="idFechaEntrada" value="2024-03-22">
+                    </div>
+
+                    <div>
+                        <label> Check-Out</label>
+                        <input type="date" name="FechaSalida" id="idFechaSalida">
+                    </div>
+                    
+                    <div style="height: 38.39px;">
+                        <label for="idNumAdultos">Adultos</label>
+                        <select name="Adultos" id="idNumAdultos">
+                          <option value="1" selected>1</option> 
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="idNumNiños">Niños</label>
+                        <select name="Niños" id="idNumNiños">
+                        <option value="0">0</option>
+                        <option value="1" selected>1</option> 
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select>
+                    </div>
+                    <input type="button" name="Reservar" id="idReservar" value="Reservar" >
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <main>
+        <section id="inicio" class="contenedor">
+            <div class="textoInicio">
+                <h4 style="font-size: 20px; padding-bottom: 0px;"><b>Bienvenido a</b></h4>
+                <h3 class="inria-serif-bold-italic">Hotel Hazbin</h3>
+                <p><b>
+                    Donde cada momento se convierte en un recuerdo inolvidable.
+                </b></p>
+                <p>
+                    Nuestro hotel combina a la perfección la elegancia contemporánea con un servicio excepcional para ofrecerle<br> una experiencia única y memorable. 
+                    Situado en una ubicación privilegiada, estamos a solo unos pasos de las principales<br> atracciones turísticas, tiendas exclusivas y vibrantes
+                    lugares de entretenimiento.
+                </p>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <section id="planesOfertas" class="contenedor">
+            <div class="textoOfertasPlanes">
+                <h2>Ofertas y planes</h2>
+                <div class="contenedorTriple">
+                    <div class="card" style="background-image: url('./img/escapadaRomantica.jpg')"></div>
+                    <div class="card" style="background-image: url('./img/familia.jpg')"></div>
+                    <div class="card" style="background-image: url('./img/Relajacion.jpg')"></div>
+                    <div>
+                        <h4>Escapada Romantica</h4>
+                        <p>Reconecte en un entorno tranquilo con vistas impresionantes y un ambiente relajado en este santuario frente al mar.</p>
+                    </div>
+                    <div>
+                        <h4>Aventuras en familia</h4>
+                        <p>Juegue en el paraíso en este ambiente acogedor para los niños, con una piscina infinita y un relajado ambiente frente a la playa.</p>
+                    </div>
+                    <div>
+                        <h4 >Relajacion Aislada</h4>
+                        <p>Sumérjase en una exuberante selva tropical y relájese rodeado de armonía natural en este paraíso familiar.</p>
+                    </div>
+                    <button class="boton botonA">Leer más</button>
+                    <button class="boton botonA">Leer más</button>
+                    <button class="boton botonA">Leer más</button>
+                </div> 
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <section id="habitaciones" class="contenedorDoble contenedorTamaño">
+            <div class="textoCuartos">
+                <h2>Habitaciones</h2>
+                <p>Nuestras habitaciones están diseñadas para tu comodidad y relajación. Ofrecemos habitaciones individuales, dobles y suites, todas equipadas con comodidades modernas.</p>
+                <button class="boton botonA">Mas detalles</button>
+            </div>
+            <div class="card" style="background-image: url('./img/habitacionIndividual.jpg')">
+                <button class="boton botonB">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                        <path d="M15 16l4 -4" />
+                        <path d="M15 8l4 4" />
+                    </svg>
+                </button>
+
+                <p style="text-align: center; background-color: rgba(255, 255, 255, .5);">Habitacion invidual</p>
+
+                <button class="boton botonC">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                        <path d="M5 12l4 4" />
+                        <path d="M5 12l4 -4" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <section id="servicios" class="contenedor textoServicios">
+            <h2>Servicios</h2>
+            <p>Nuestro hotel se enorgullece de ofrecer una amplia gama de servicios diseñados para satisfacer las necesidades<br>
+                y comodidades de nuestros estimados huéspedes. Desde el momento en que pones un pie en<br>
+                nuestras instalaciones, nos dedicamos a proporcionarte una experiencia inolvidable y sin preocupaciones.</p>
+                <div class="contenedorTripleV">
+                    <div class="card" style="background-image: url('./img/piscina.jpg')"></div>
+                    <div class="card" style="background-image: url('./img/restaurante.jpg')"></div>
+                    <div class="card" style="background-image: url('./img/gym.jpg')"></div>
+                    <div>
+                        <p>Piscina al aire libre para todo tipo de publico</p>
+                        <button class="boton botonA">Leer mas</button>
+                    </div>
+                    <div>
+                        <p>Restaurante con cocina internacional disponible</p>
+                        <button class="boton botonA">Leer mas</button>
+                    </div>
+                    <div>
+                        <p>Gimnasio totalmente equipado para todos</p>
+                        <button class="boton botonA">Leer mas</button>
+                    </div>
+                </div>
+
+                <br><br><br><br><br><br>
+
+                <div class="contenedorTriple">
+                        <div></div>
+                        <button class="boton botonA">Ver todos los servicios</button>
+                </div>
+        </section>
+        
+        <br><br><br><br><br><br><br><br>
+
+        <section id="registro" class="contenedor">
+        <h2 style="text-align: center;">Registro</h2>
+            <div class="form-register">
+                <br>
+                <h4>Nombres</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre(s)">
+                <h4>Apellidos</h4>
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellido(s)">
+                <h4>Email</h4>
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Correo">
+                <h4>Constraseña</h4>
+                <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Constraseña">
+                <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="#">¿Ya tengo cuenta?</a></p>
+            </div>
+        </section>
+
+    </main> 
+
+    <br><br><br><br>
+
+    <footer>
+        &copy; 2024 Hotel Ejemplo. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
